@@ -30,6 +30,8 @@ class PriceServiceTest {
         
         val request3 = PriceRequest(1000, "HOUSE", "downtown")
         val result3 = service.calculatePropertyPrice(request3)
+        request1 == request3
+        assertTrue(request1 == request3)
         assertEquals(request1, request3)
     }
     
